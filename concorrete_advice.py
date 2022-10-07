@@ -5,7 +5,7 @@ import statistics
 import threading
 url = "https://api.adviceslip.com/advice"
 
-qtd_requisi=[300]
+qtd_requisi=[10,50,100,150,200,250,300]
 
 def requisicoes():
 		response = requests.request("GET", url)
@@ -29,4 +29,4 @@ for i in qtd_requisi:
 		time_vec=[]
 	
 	f.close()
-print("Finalizei qtd_requisicoes!"+str(i))	
+	
