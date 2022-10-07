@@ -5,7 +5,7 @@ import statistics
 import numpy as np
 url = "https://api.adviceslip.com/advice"
 
-qtd_requisi=[300]
+qtd_requisi=[10,50,100,150,200,250,300]
 
 
 for i in qtd_requisi:
@@ -25,4 +25,3 @@ for i in qtd_requisi:
 		w.writerow(time_vec)
 		time_vec=[]
 	f.close()
-print("Finalizei qtd_requisicoes!"+str(i))
